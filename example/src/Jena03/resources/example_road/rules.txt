@@ -1,0 +1,2 @@
+@prefix : <http://tutorialacademy.com/2015/jena#> .
+[ruleStop: (?c :go ?r) (?h :go ?r) (?c :warning ?h) -> (?c :stop ?r)]

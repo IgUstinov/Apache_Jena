@@ -1,0 +1,5 @@
+@prefix : <http://tutorialacademy.com/2015/jena#> .
+:myCar :stop :myRoad .
+:myHuman :go :myRoad .
+:myCar :go :myRoad .
+:myCar :warning :myHuman .
