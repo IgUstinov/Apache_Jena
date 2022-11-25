@@ -20,35 +20,35 @@ public class JenaReasoningWithRules {
         //создаём модель
         Model model = ModelFactory.createDefaultModel();
         //путь к файлу с данными
-        //model.read( "src/Jena03/resources/example_school/dataset.n3" );
         model.read( "src/Jena03/resources/example_road/dataset.n3" );
 
         //создаём резонер. Путь к файлу правил
-        //Reasoner reasoner = new GenericRuleReasoner( Rule.rulesFromURL( "src/Jena03/resources/example_school/rules.txt" ) );
         Reasoner reasoner = new GenericRuleReasoner( Rule.rulesFromURL( "src/Jena03/resources/example_road/rules.txt" ) );
 
         //создание модель с правилами
         InfModel infModel = ModelFactory.createInfModel( reasoner, model );
         StmtIterator it = infModel.listStatements();
+
+        //Запись новых данных в файл
         StringBuilder dataSet = new StringBuilder();
+        //Обязательно нужен prefix в начале
         dataSet.append("@prefix : <http://tutorialacademy.com/2015/jena#> .\n");
 
         while ( it.hasNext() )
         {
             Statement stmt = it.nextStatement();
-
             Resource subject = stmt.getSubject();
             Property predicate = stmt.getPredicate();
             RDFNode object = stmt.getObject();
-            //Избавление от рефлективности: Дима одноклассник Димы
-            /*if (!predicate.getLocalName().equals("classmate") || (predicate.getLocalName().equals("classmate")  && !subject.getLocalName().equals(object.asResource().getLocalName())))
-                System.out.println( subject.getLocalName() + " " + predicate.getLocalName() + " " + object.asResource().getLocalName() );*/
-            System.out.println( subject.getLocalName() + " " + predicate.getLocalName() + " " + object.asResource().getLocalName() );
-            dataSet.append(":").append(subject.getLocalName()).append(" :").
-                    append(predicate.getLocalName()).append(" :").append(object.asResource().getLocalName()).append(" .\n");
+            System.out.println( subject.getLocalName() + " "
+                    + predicate.getLocalName() + " "
+                    + object.asResource().getLocalName() );
+            dataSet.append(":").append(subject.getLocalName()).
+                    append(" :").append(predicate.getLocalName()).
+                    append(" :").append(object.asResource().getLocalName()).append(" .\n");
         }
         try {
-            FileOutputStream outDS = new FileOutputStream("src/Jena03/resources/example_road/dataset_new.n3");
+            FileOutputStream outDS = new FileOutputStream("src/Jena03/resources/example_road/dataset_new.n3");    //Файл с новыми триплетами
             outDS.write(dataSet.toString().getBytes());
             outDS.close();
         } catch (Exception e){

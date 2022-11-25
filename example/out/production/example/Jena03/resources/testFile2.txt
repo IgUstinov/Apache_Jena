@@ -12,11 +12,8 @@ Class: car
  Inst: [
   myCar  
 ]
+warning
+stop
+go
+at_the_front
 
-warning 
-stop 
-go 
-at_the_front 
-
-class: human Ind: myHuman 
-class: car Ind: myCar 
