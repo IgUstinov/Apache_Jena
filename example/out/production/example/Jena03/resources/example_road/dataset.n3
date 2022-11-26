@@ -1,3 +1,4 @@
 @prefix : <http://tutorialacademy.com/2015/jena#> .
-:map-and-control-ontology :versionIRI : .
-:myLane :nextPathSegment :otherLane .
+:isPathSegmentOf :inverseOf :hasPathSegment .
+:prevNode :inverseOf :nextNode .
+:nextPathSegment :inverseOf :prevPathSegment .

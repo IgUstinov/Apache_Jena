@@ -14,19 +14,29 @@ import org.apache.jena.shared.JenaException;                                    
 public class Jena_cars extends Object {                                                                                 //метод run произошёл от Object
                                                                                                                         //@SuppressWarnings(value = "unused"); аннотация, чтобы убрать некоторые предупреждающие сообщения
     static Logger log = LoggerFactory.getLogger(Jena_cars.class);                                                       //для обработки внештатных ситуаций
-    static String ontoFile = "src/Jena03/resources/map-and-control-ontology.owl";                                       //файл, откуда получаем онтологию (RDF/XML)
+    static String ontoFile = "src/Jena03/resources/TTICarOnto.owl.xml";                                                 //файл, откуда получаем онтологию (RDF/XML)
+    static String ontoFileControl = "src/Jena03/resources/TTIControlOnto.owl.xml";
+    static String ontoFileMap = "src/Jena03/resources/TTIMapOnto.owl.xml";
+    static String ontoFileTempaku = "src/Jena03/resources/TTITempakuMapData.owl.xml";
     public static void main(String[] args) {
         new Jena_cars().run();
     }
+
     public void run() {                                                                                                 //создание онтологической модели
-        OntDocumentManager mgr = new OntDocumentManager();                                                              //создание менеджера документов
-        OntModelSpec s = new OntModelSpec(OntModelSpec.OWL_MEM);                                                        //объект связанный со спецификациями онтологической модели
-        s.setDocumentManager(mgr);                                                                                      //"подцепим" онтомодел и менеджер спецификациями
-        OntModel ontoModel = ModelFactory.createOntologyModel(s);                                                       //онтологическая модель
         try {                                                                                                           //загрузка файла с онтологией
-            InputStream in = FileManager.get().open(ontoFile);                                                          //закачиваем из файла нашу модель
             try {                                                                                                       //построение онтологической модели
-                ontoModel.read(in, null);
+                OntDocumentManager mgr = new OntDocumentManager();                                                      //создание менеджера документов
+                OntModelSpec s = new OntModelSpec(OntModelSpec.OWL_MEM);                                                //объект связанный со спецификациями онтологической модели
+                s.setDocumentManager(mgr);                                                                              //"подцепим" онтомодел и менеджер спецификациями
+                OntModel ontoModel = ModelFactory.createOntologyModel(s);                                               //онтологическая модель
+                InputStream inCar = FileManager.get().open(ontoFile);                                                   //закачиваем из файла нашу модель
+                InputStream inControl = FileManager.get().open(ontoFileControl);
+                InputStream inMap = FileManager.get().open(ontoFileMap);
+                InputStream inTempaku = FileManager.get().open(ontoFileTempaku);
+                ontoModel.read(inCar, null);
+                ontoModel.read(inControl, null);
+                ontoModel.read(inMap, null);
+                ontoModel.read(inTempaku, null);
                 ExtendedIterator<OntClass> classes = ontoModel.listClasses();                                           //для прохода по классам итератор
                 StringBuilder data = new StringBuilder();
 
@@ -38,6 +48,10 @@ public class Jena_cars extends Object {                                         
                         if (theClass.getLocalName().equals("OneWayLane")) {
                             theClass.createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#otherLane");
                             theClass.createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#myLane");
+                            ontoModel.add(
+                                    ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#myLane"),
+                                    ontoModel.getProperty("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#nextPathSegment"),
+                                    ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#otherLane"));
                         }
                         if (theClass.listInstances() != null) {
                             ExtendedIterator<? extends OntResource> insts = theClass.listInstances();                   //для прохода по экземплярам класса
@@ -51,10 +65,7 @@ public class Jena_cars extends Object {                                         
                     }
                 }
                 data.append("\n");
-                ontoModel.add(
-                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#myLane"),
-                        ontoModel.getProperty("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#nextPathSegment"),
-                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#otherLane"));
+
                 /*ontoModel.getResource("#myLane").                                                                     //добавляет триплет, но выдаёт ошибку при записи в rdf ниже
                 addProperty(ontoModel.getProperty("#nextPathSegment"), ontoModel.getResource("#otherLane"));*/
 
@@ -72,6 +83,9 @@ public class Jena_cars extends Object {                                         
                     Property predicate = stmt.getPredicate();
                     RDFNode object = stmt.getObject();
                     if (!predicate.getLocalName().equals("type")
+                            && !predicate.getLocalName().equals("subPropertyOf")
+                            && !predicate.getLocalName().equals("range")
+                            && !predicate.getLocalName().equals("domain")
                             && !predicate.getLocalName().equals("subClassOf")
                             && object.isResource()
                             && !predicate.getLocalName().equals("versionIRI")) {
