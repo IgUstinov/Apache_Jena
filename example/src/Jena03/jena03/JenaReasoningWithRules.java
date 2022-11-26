@@ -17,22 +17,17 @@ import java.io.FileOutputStream;
 public class JenaReasoningWithRules {
     public static void main(String[] args)
     {
-        //создаём модель
-        Model model = ModelFactory.createDefaultModel();
-        //путь к файлу с данными
-        model.read( "src/Jena03/resources/example_road/dataset.n3" );
+        Model model = ModelFactory.createDefaultModel();                                                                //создаём модель
+        model.read("src/Jena03/resources/example_road/dataset.n3");                                                 //путь к файлу с данными
 
-        //создаём резонер. Путь к файлу правил
-        Reasoner reasoner = new GenericRuleReasoner( Rule.rulesFromURL( "src/Jena03/resources/example_road/rules.txt" ) );
+        Reasoner reasoner = new GenericRuleReasoner(
+                Rule.rulesFromURL("src/Jena03/resources/example_road/rules.txt"));                                  //создаём резонер. Путь к файлу правил
 
-        //создание модель с правилами
-        InfModel infModel = ModelFactory.createInfModel( reasoner, model );
+        InfModel infModel = ModelFactory.createInfModel(reasoner, model);                                               //создание модель с правилами
         StmtIterator it = infModel.listStatements();
 
-        //Запись новых данных в файл
-        StringBuilder dataSet = new StringBuilder();
-        //Обязательно нужен prefix в начале
-        dataSet.append("@prefix : <http://tutorialacademy.com/2015/jena#> .\n");
+        StringBuilder dataSet = new StringBuilder();                                                                    //Запись новых данных в файл
+        dataSet.append("@prefix : <http://tutorialacademy.com/2015/jena#> .\n");                                        //Обязательно нужен prefix в начале
 
         while ( it.hasNext() )
         {

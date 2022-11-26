@@ -1,0 +1,200 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#"
+    xmlns="http://www.semanticweb.org/igor/ontologies/2022/10/map-and-control-ontology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-and-control-ontology">
+    <rdfs:label>Онтология дороги</rdfs:label>
+    <rdfs:label>Онтология движения</rdfs:label>
+    <rdfs:label>Объединение Онтологии дороги и Онтологии движения</rdfs:label>
+    <owl:versionIRI rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/map-and-control-ontology/1.0.0"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#NationalRoad">
+    <rdfs:label>НациональнаяДорога</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#OrdinaryRoad"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#BusLane">
+    <rdfs:label>АвтобуснаяПолоса</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Lane"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#ToLeft">
+    <rdfs:label>Налево</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#DrivingDirection"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#RoadSegment">
+    <rdfs:label>УчастокДороги</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#RoadPart"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Roundabout">
+    <rdfs:label>Кольцо</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Junction"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#HighWay">
+    <rdfs:label>Шоссе</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#RoadType"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#Path">
+    <rdfs:label>Путь</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PrefecturalRoad">
+    <rdfs:label>ПрефектурнаяДорога</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#OrdinaryRoad"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#RouteOfTransportation">
+    <rdfs:label>МаршрутТранспортировки</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#Node">
+    <rdfs:label>Узел</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#Path"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Turn">
+    <rdfs:label>Поворот</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Junction"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#MunicipalRoad">
+    <rdfs:label>МуниципальнаяДорога</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#OrdinaryRoad"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#Go">
+    <rdfs:label>Перемещаться</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#DrivingDirection"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#GoBackward">
+    <rdfs:label>ДвижениеНазад</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#DrivingDirection"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#OneWayLane">
+    <rdfs:label>ПолосаСОдностороннимДвижением</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Lane"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#GoForward">
+    <rdfs:label>ДвижениеВперёд</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#DrivingDirection"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#DrivingDirection">
+    <rdfs:label>НаправлениеДвижения</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#RoadPart">
+    <rdfs:label>ДорожнаяЧасть</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#RouteOfTransportation"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Lane">
+    <rdfs:label>ПолосаДвижения</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#RoadPart"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#Stop">
+    <rdfs:label>Остановиться</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#DrivingDirection"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#ToRight">
+    <rdfs:label>Направо</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#DrivingDirection"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#CrosswalkRoadSegment">
+    <rdfs:label>УчастокДорогиСПешеходнымПереходом</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#RoadSegment"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Intersection">
+    <rdfs:label>Перекресток</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Junction"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PrivateRoad">
+    <rdfs:label>ЧастнаяДорога</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#OrdinaryRoad"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#LaneAdapter">
+    <rdfs:label>АдаптерПолосыДвижения</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Junction"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#LocalRoad">
+    <rdfs:label>МестнаяДорога</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#OrdinaryRoad"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#TwoWayLane">
+    <rdfs:label>ПолосаСДвустороннимДвижением</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Lane"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#PathSegment">
+    <rdfs:label>ЧастьПути</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#Path"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#RoadType">
+    <rdfs:label>ТипДороги</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#RouteOfTransportation"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Junction">
+    <rdfs:label>Соединение</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#RoadPart"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#TurnLeft">
+    <rdfs:label>ПовернутьНалево</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#DrivingDirection"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#TurnRight">
+    <rdfs:label>ПовернутьНаправо</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/control-ontology#DrivingDirection"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#OrdinaryRoad">
+    <rdfs:label>ОбычнаяДорога</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#RoadType"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-and-control-ontology#collisionWarningWith">
+    <rdfs:label>опасностьСтолкновенияС</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-and-control-ontology#turnRightTo">
+    <rdfs:label>повернутьНаправоНа</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-and-control-ontology#giveWay">
+    <rdfs:label>уступитьДорогу</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-and-control-ontology#turnLeftTo">
+    <rdfs:label>повернутьНалевоНа</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-and-control-ontology#nextPathSegment">
+    <rdfs:label>следующийСегментПути</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-and-control-ontology#isRunningOn">
+    <rdfs:label>движетсяПо</rdfs:label>
+  </owl:ObjectProperty>
+  <j.0:OneWayLane rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#myLane">
+    <j.0:nextPathSegment>
+      <j.0:OneWayLane rdf:about="http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#otherLane"/>
+    </j.0:nextPathSegment>
+  </j.0:OneWayLane>
+</rdf:RDF>

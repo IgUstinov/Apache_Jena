@@ -1,5 +1,2 @@
-@prefix : <http://tutorialacademy.com/2015/jena#> .
-:myCar :stop :myRoad .
-:myHuman :go :myRoad .
-:myCar :go :myRoad .
-:myCar :warning :myHuman .
+@prefix : <http://www.semanticweb.org/igor/ontologies/2022/10/map-and-control-ontology#> .
+:map-and-control-ontology :versionIRI : .

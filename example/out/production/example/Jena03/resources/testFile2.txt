@@ -1,19 +1,102 @@
-Class: vehicles
+Class: RoadPart
  Inst: [  
 ]
-Class: road
+Class: LocalRoad
  Inst: [  
 ]
-Class: human
- Inst: [
-  myHuman  
+Class: PrivateRoad
+ Inst: [  
 ]
-Class: car
- Inst: [
-  myCar  
+Class: BusLane
+ Inst: [  
 ]
-warning
-stop
-go
-at_the_front
+Class: Roundabout
+ Inst: [  
+]
+Class: ToRight
+ Inst: [  
+]
+Class: Path
+ Inst: [  
+]
+Class: Node
+ Inst: [  
+]
+Class: Junction
+ Inst: [  
+]
+Class: Go
+ Inst: [  
+]
+Class: OneWayLane
+ Inst: [
+  myLane
+  otherLane  
+]
+Class: PrefecturalRoad
+ Inst: [  
+]
+Class: TurnRight
+ Inst: [  
+]
+Class: RoadSegment
+ Inst: [  
+]
+Class: Turn
+ Inst: [  
+]
+Class: Stop
+ Inst: [  
+]
+Class: TurnLeft
+ Inst: [  
+]
+Class: RouteOfTransportation
+ Inst: [  
+]
+Class: ToLeft
+ Inst: [  
+]
+Class: HighWay
+ Inst: [  
+]
+Class: Lane
+ Inst: [  
+]
+Class: PathSegment
+ Inst: [  
+]
+Class: TwoWayLane
+ Inst: [  
+]
+Class: MunicipalRoad
+ Inst: [  
+]
+Class: GoForward
+ Inst: [  
+]
+Class: NationalRoad
+ Inst: [  
+]
+Class: Intersection
+ Inst: [  
+]
+Class: DrivingDirection
+ Inst: [  
+]
+Class: GoBackward
+ Inst: [  
+]
+Class: RoadType
+ Inst: [  
+]
+Class: CrosswalkRoadSegment
+ Inst: [  
+]
+Class: LaneAdapter
+ Inst: [  
+]
+Class: OrdinaryRoad
+ Inst: [  
+]
 
