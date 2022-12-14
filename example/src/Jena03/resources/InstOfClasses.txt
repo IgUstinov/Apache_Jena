@@ -1,0 +1,445 @@
+Class: TurnRight
+ Inst: [  
+]
+Class: LargeSpecialVehicle
+ Inst: [  
+]
+Class: RoadSegment
+ Inst: [  
+]
+Class: Place
+ Inst: [  
+]
+Class: PathSegment
+ Inst: [  
+]
+Class: PoliceStation
+ Inst: [  
+]
+Class: SpeedLimit40
+ Inst: [  
+]
+Class: SuddenDeceleration
+ Inst: [  
+]
+Class: Shop
+ Inst: [  
+]
+Class: Supermarket
+ Inst: [  
+]
+Class: GoBackward
+ Inst: [  
+]
+Class: EndNode
+ Inst: [  
+]
+Class: PassengerCar
+ Inst: [  
+]
+Class: RedStop
+ Inst: [  
+]
+Class: Sonar
+ Inst: [  
+]
+Class: LaneAdapter
+ Inst: [  
+]
+Class: Trajectory
+ Inst: [  
+]
+Class: DirectionalRoadSign
+ Inst: [  
+]
+Class: SpeedLimit60
+ Inst: [  
+]
+Class: SpeedLimit100
+ Inst: [  
+]
+Class: School
+ Inst: [  
+]
+Class: PrivateRoad
+ Inst: [  
+]
+Class: Bicycle
+ Inst: [  
+]
+Class: FastFood
+ Inst: [  
+]
+Class: RegularVehicle
+ Inst: [  
+]
+Class: SpeedLimit25
+ Inst: [  
+]
+Class: Lake
+ Inst: [  
+]
+Class: Sensor
+ Inst: [  
+]
+Class: Kindergarten
+ Inst: [  
+]
+Class: GPS
+ Inst: [  
+]
+Class: LaneChange
+ Inst: [  
+]
+Class: Bus
+ Inst: [  
+]
+Class: InstructionSurfaceSign
+ Inst: [  
+]
+Class: LaneDepartureWarning
+ Inst: [  
+]
+Class: Warning
+ Inst: [  
+]
+Class: RoadSign
+ Inst: [  
+]
+Class: CarParts
+ Inst: [  
+]
+Class: RailwayStation
+ Inst: [  
+]
+Class: Pharmacy
+ Inst: [  
+]
+Class: Lidar
+ Inst: [  
+]
+Class: SpeedProfile
+ Inst: [  
+]
+Class: Infrastructure
+ Inst: [  
+]
+Class: Deceleration
+ Inst: [  
+]
+Class: SportsCentre
+ Inst: [  
+]
+Class: RoadType
+ Inst: [  
+]
+Class: InstructionRoadSign
+ Inst: [  
+]
+Class: BusLane
+ Inst: [  
+]
+Class: Acceleration
+ Inst: [  
+]
+Class: CAN
+ Inst: [  
+]
+Class: LocalRoad
+ Inst: [  
+]
+Class: SpeedLimit50
+ Inst: [  
+]
+Class: FireStation
+ Inst: [  
+]
+Class: NationalRoad
+ Inst: [  
+]
+Class: SideCollisionWarning
+ Inst: [  
+]
+Class: GPSTrack
+ Inst: [  
+]
+Class: BackwardCollisionWarning
+ Inst: [  
+]
+Class: Forest
+ Inst: [  
+]
+Class: TollGate
+ Inst: [  
+]
+Class: StartLane
+ Inst: [  
+]
+Class: BusStation
+ Inst: [  
+]
+Class: LaneSegment
+ Inst: [  
+]
+Class: Turn
+ Inst: [  
+]
+Class: CurrentLaneSafeDist
+ Inst: [  
+]
+Class: Motorcycle
+ Inst: [  
+]
+Class: Camera
+ Inst: [  
+]
+Class: Stop
+ Inst: [  
+]
+Class: EndLane
+ Inst: [  
+]
+Class: OtherSigns
+ Inst: [  
+]
+Class: StartNode
+ Inst: [  
+]
+Class: SpeedLimit70
+ Inst: [  
+]
+Class: OneWayLane
+ Inst: [  
+]
+Class: CrosswalkRoadSegment
+ Inst: [  
+]
+Class: ToRight
+ Inst: [  
+]
+Class: DrivingAction
+ Inst: [  
+]
+Class: RoadCondition
+ Inst: [  
+]
+Class: Bank
+ Inst: [  
+]
+Class: ForwardCollisionWarning
+ Inst: [  
+]
+Class: TwoWayLane
+ Inst: [  
+]
+Class: SpeedLimit30
+ Inst: [  
+]
+Class: SmallSpecialVehicle
+ Inst: [  
+]
+Class: Amenity
+ Inst: [  
+]
+Class: SpeedLimit
+ Inst: [  
+]
+Class: EducationalInstitute
+ Inst: [  
+]
+Class: Convenience
+ Inst: [  
+]
+Class: Leisure
+ Inst: [  
+]
+Class: BusStop
+ Inst: [  
+]
+Class: RegulatorySurfaceSign
+ Inst: [  
+]
+Class: OrdinaryRoad
+ Inst: [  
+]
+Class: CollisionWarning
+ Inst: [  
+]
+Class: MunicipalRoad
+ Inst: [  
+]
+Class: Hospital
+ Inst: [  
+]
+Class: TrafficSign
+ Inst: [  
+]
+Class: Building
+ Inst: [  
+]
+Class: Intersection
+ Inst: [  
+]
+Class: University
+ Inst: [  
+]
+Class: TrafficSignal
+ Inst: [  
+]
+Class: Roundabout
+ Inst: [  
+]
+Class: River
+ Inst: [  
+]
+Class: GasStation
+ Inst: [  
+]
+Class: OverSpeedWarning
+ Inst: [  
+]
+Class: RouteOfTransportation
+ Inst: [  
+]
+Class: Station
+ Inst: [  
+]
+Class: IntersectionSegment
+ Inst: [  
+]
+Class: Junction
+ Inst: [  
+]
+Class: RightLaneChange
+ Inst: [  
+]
+Class: MyCar
+ Inst: [  
+]
+Class: AuxiliaryRoadSign
+ Inst: [  
+]
+Class: Car
+ Inst: [  
+]
+Class: Node
+ Inst: [  
+]
+Class: Railway
+ Inst: [  
+]
+Class: Lane
+ Inst: [  
+]
+Class: Object
+ Inst: [  
+]
+Class: Truck
+ Inst: [  
+]
+Class: Engine
+ Inst: [  
+]
+Class: SpecialVehicle
+ Inst: [  
+]
+Class: RoadPart
+ Inst: [  
+]
+Class: Go
+ Inst: [  
+]
+Class: TrafficSignalControl
+ Inst: [  
+]
+Class: SuddenAcceleration
+ Inst: [  
+]
+Class: Airport
+ Inst: [  
+]
+Class: MetroStation
+ Inst: [  
+]
+Class: SpeedLimit80
+ Inst: [  
+]
+Class: RegulatoryRoadSign
+ Inst: [  
+]
+Class: ConstantSpeed
+ Inst: [  
+]
+Class: GreenGo
+ Inst: [  
+]
+Class: Automobile
+ Inst: [  
+]
+Class: Yellow
+ Inst: [  
+]
+Class: WaitThenGo
+ Inst: [  
+]
+Class: SmoothAcceleration
+ Inst: [  
+]
+Class: Highway
+ Inst: [  
+]
+Class: Path
+ Inst: [  
+]
+Class: UtilityPole
+ Inst: [  
+]
+Class: Path
+ Inst: [  
+]
+Class: Park
+ Inst: [  
+]
+Class: Vehicle
+ Inst: [  
+]
+Class: Restaurant
+ Inst: [  
+]
+Class: SmoothDeceleration
+ Inst: [  
+]
+Class: College
+ Inst: [  
+]
+Class: LeftLaneChange
+ Inst: [  
+]
+Class: GoForward
+ Inst: [  
+]
+Class: PrefecturalRoad
+ Inst: [  
+]
+Class: ToLeft
+ Inst: [  
+]
+Class: WarningRoadSign
+ Inst: [  
+]
+Class: TurnLeft
+ Inst: [  
+]
+Class: PostOffice
+ Inst: [  
+]
+Class: RoadSurfaceMarking
+ Inst: [  
+]
+Class: ParkingPlace
+ Inst: [  
+]
+Class: NaturalPlace
+ Inst: [  
+]
+
