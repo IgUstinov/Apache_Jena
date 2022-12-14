@@ -18,6 +18,7 @@ public class Jena_cars extends Object {                                         
     static String ontoFileControl = "src/Jena03/resources/TTIControlOnto.owl.xml";
     static String ontoFileMap = "src/Jena03/resources/TTIMapOnto.owl.xml";
     static String ontoFileTempaku = "src/Jena03/resources/TTITempakuMapData.owl.xml";
+    static String ontoSign = "src/Jena03/resources/roadSign4.owl.xml";
     public static void main(String[] args) {
         new Jena_cars().run();
     }
@@ -55,29 +56,68 @@ public class Jena_cars extends Object {                                         
                         }
                         if (theClass.listInstances() != null) {
                             ExtendedIterator<? extends OntResource> insts = theClass.listInstances();                   //для прохода по экземплярам класса
-                            data.append(" Inst: [");                                                                    //Всё это в файл testFile2.txt
+                            data.append(" Inst: [\n");                                                                    //Всё это в файл testFile2.txt
                             while (insts.hasNext()) {
                                 OntResource theInst = (OntResource) insts.next();
                                 data.append("\n  ").append(theInst.getLocalName());
+                                //insts.remove();                                                                         //№1 Способ удаления всех экземпляров
                             }
+
+                            /*while (insts.hasNext()) {                                                                   //для проверки удаления - testFile2.txt
+                                OntResource theInst = (OntResource) insts.next();
+                                data.append("\n  ").append(theInst.getLocalName());
+                                //insts.remove();
+                            }*/
                             data.append("  \n]\n");
                         }
                     }
                 }
                 data.append("\n");
+                /*.out.println("_______________________________");                                                      //№2 Способ удаления всех экземпляров
+                ExtendedIterator<? extends OntResource> ind = ontoModel.listIndividuals();
+                while (ind.hasNext()) {
+                    OntResource theInd = (OntResource) ind.next();
+                    System.out.println((theInd.getLocalName()));
+                    //ind.remove();
+                }
+                /*while (ind.hasNext()) {
+                    OntResource theInd = (OntResource) ind.next();
+                    System.out.println((theInd.getLocalName()));
+                    //ind.remove();
+                }
+                System.out.println("_______________________________");*/
 
                 /*ontoModel.getResource("#myLane").                                                                     //добавляет триплет, но выдаёт ошибку при записи в rdf ниже
                 addProperty(ontoModel.getProperty("#nextPathSegment"), ontoModel.getResource("#otherLane"));*/
 
-                FileOutputStream outF = new FileOutputStream("src/Jena03/resources/newRdf.owl");                  //Запись изменений в rdf формате в новый файл
-                ontoModel.write(outF);
-                outF.close();
+
 
                 StringBuilder dataSet = new StringBuilder();                                                            //для записи триплетов
                 dataSet.append("@prefix : <http://tutorialacademy.com/2015/jena#> .\n");                                //Обязательно нужен prefix в начале
                 StmtIterator it = ontoModel.listStatements();
-                while (it.hasNext())
-                {
+                while (it.hasNext()) {                                                                                  //Удаление всех триплетов японской онтологии
+                    Statement stmt = it.nextStatement();                                                                //Всё это в файл dataset.n3
+                    Resource subject = stmt.getSubject();
+                    Property predicate = stmt.getPredicate();
+                    RDFNode object = stmt.getObject();
+                    if (!predicate.getLocalName().equals("type")
+                            && !predicate.getLocalName().equals("subPropertyOf")
+                            && !predicate.getLocalName().equals("range")
+                            && !predicate.getLocalName().equals("domain")
+                            && !predicate.getLocalName().equals("subClassOf")
+                            && object.isResource()
+                            && !predicate.getLocalName().equals("versionIRI")) {
+                        it.remove();
+                    }
+                    /*if (object.isLiteral()) {                                                                         //<Название на английском> label <Название на русском>
+                        System.out.println( subject.getLocalName() + " "
+                                + predicate.getLocalName() + " "
+                                + object.asLiteral() );
+                    }*/
+                }
+                InputStream inSign = FileManager.get().open(ontoSign);                                                  //Добавление онтологии Алины
+                ontoModel.read(inSign, null);
+                while (it.hasNext()) {                                                                                  //вывод для проверки + вывод в dataset.n3
                     Statement stmt = it.nextStatement();                                                                //Всё это в файл dataset.n3
                     Resource subject = stmt.getSubject();
                     Property predicate = stmt.getPredicate();
@@ -102,6 +142,10 @@ public class Jena_cars extends Object {                                         
                                 + object.asLiteral() );
                     }*/
                 }
+
+                FileOutputStream outF = new FileOutputStream("src/Jena03/resources/newRdf.owl");                  //Запись изменений в rdf формате в новый файл
+                ontoModel.write(outF);
+                outF.close();
                 FileOutputStream outDS = new FileOutputStream("src/Jena03/resources/example_road/dataset.n3");    //триплеты
                 outDS.write(dataSet.toString().getBytes());
                 outDS.close();

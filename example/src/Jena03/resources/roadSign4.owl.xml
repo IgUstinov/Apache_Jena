@@ -1,0 +1,2256 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#"
+     xml:base="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:roadSign4="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasBackgroundColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasBackgroundColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasСolor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasFrameColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasFrameColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasСolor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasImage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasImage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasImageColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasImageColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasСolor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasText -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasText">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasTextColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasTextColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasСolor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasСolor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasСolor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isBackgroundColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isBackgroundColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isColor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isFrameColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isFrameColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isColor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isImage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isImage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isImageColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isImageColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isColor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isText -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isText">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isTextColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isTextColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isColor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasCodeOfRoadSign -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasCodeOfRoadSign">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign"/>
+        <rdfs:label>ЗнакДополнительнойИнформации</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Animal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Arrow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Arrow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Color">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Black"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Blue"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Green"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Red"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#White"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Yellow"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isColor"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Distance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Distance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Figure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Figure">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasShape"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Shape"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Image -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Image">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isImage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasImageColor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Color"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign"/>
+        <rdfs:label>ИнформационныйЗнак</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Inscription -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Inscription">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Letter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Letter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Line -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Line">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign"/>
+        <rdfs:label>ПредписывающийЗнак</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign"/>
+        <rdfs:label>ЗнакПриоритета</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign"/>
+        <rdfs:label>ЗапрещающийДорожныйЗнак</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RadioSignal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RadioSignal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasBackgroundColor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Color"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasFrameColor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Color"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasShape"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Shape"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign"/>
+        <rdfs:label>ЗнакСервиса</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Shape">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Circle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Cross"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Polygon"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Rectangle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Square"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Triangle"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isShape"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Figure"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign"/>
+        <rdfs:label>ЗнакОсобыхПредписаний</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Speed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Speed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Text -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Text">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#isText"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#hasTextColor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Color"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign"/>
+        <rdfs:label>ПредупреждающийЗнак</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WeatherCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WeatherCondition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Image"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Weight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Weight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AbovegroundPedestrianCrossing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AbovegroundPedestrianCrossing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.7</hasCodeOfRoadSign>
+        <rdfs:label>НадземныйПешеходныйПереход</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdvantageOverOncomingTraffic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdvantageOverOncomingTraffic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.7</hasCodeOfRoadSign>
+        <rdfs:label>ПреимуществоПередВстречнымДвижением</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AreaOfOperation1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AreaOfOperation1">
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.2.1</hasCodeOfRoadSign>
+        <rdfs:label>ЗонаДействия1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AreaOfOperation2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AreaOfOperation2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.2.2</hasCodeOfRoadSign>
+        <rdfs:label>ЗонаДействия2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ArtificialUnevenness1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ArtificialUnevenness1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.17</hasCodeOfRoadSign>
+        <rdfs:label>ИскусственнаяНеровность1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ArtificialUnevenness5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ArtificialUnevenness5">
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.20</hasCodeOfRoadSign>
+        <rdfs:label>ИскусственнаяНеровность5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Black -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Black">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#BlindPedestrians -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#BlindPedestrians">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.15</hasCodeOfRoadSign>
+        <rdfs:label>СлепыеПешеходы</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Blue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Blue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#CarMaintenance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#CarMaintenance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.4</hasCodeOfRoadSign>
+        <rdfs:label>ТехническоеОбслуживаниеАвтомобилей</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#CarWashing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#CarWashing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.5</hasCodeOfRoadSign>
+        <rdfs:label>МойкаАвтомобилей</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#CattleDrive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#CattleDrive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.26</hasCodeOfRoadSign>
+        <rdfs:label>ПерегонСкота</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Children -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Children">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.23</hasCodeOfRoadSign>
+        <rdfs:label>Дети</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Circle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Circle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#CircularMotion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#CircularMotion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.3</hasCodeOfRoadSign>
+        <rdfs:label>КруговоеДвижение</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#CoverageArea3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#CoverageArea3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.2.3</hasCodeOfRoadSign>
+        <rdfs:label>ЗонаДействия3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#CoverageArea4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#CoverageArea4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.2.4</hasCodeOfRoadSign>
+        <rdfs:label>ЗонаДействия4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Cross -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Cross">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DangerousRoadside -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DangerousRoadside">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.19</hasCodeOfRoadSign>
+        <rdfs:label>ОпаснаяОбочина</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DangerousTurn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DangerousTurn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.11</hasCodeOfRoadSign>
+        <rdfs:label>ОпасныйПоворот</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DangerousTurn1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DangerousTurn1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.11.1</hasCodeOfRoadSign>
+        <rdfs:label>ОпасныйПоворот1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DangerousTurns -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DangerousTurns">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.12</hasCodeOfRoadSign>
+        <rdfs:label>ОпасныеПовороты</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DangerousTurns2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DangerousTurns2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.12.2</hasCodeOfRoadSign>
+        <rdfs:label>ОпасныеПовороты2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Deadlock2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Deadlock2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.8.2</hasCodeOfRoadSign>
+        <rdfs:label>Тупик2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Deadlock3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Deadlock3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.8.3</hasCodeOfRoadSign>
+        <rdfs:label>Тупик3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DepartureToTheEmbankment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DepartureToTheEmbankment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.10</hasCodeOfRoadSign>
+        <rdfs:label>ВыездНаНабережную</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DetourObstaclesOnRightOrLeft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DetourObstaclesOnRightOrLeft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.2.3</hasCodeOfRoadSign>
+        <rdfs:label>ОбъездПрепятствияСправаИлиСлева</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DetourOfObstacleOnRight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DetourOfObstacleOnRight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.2.1</hasCodeOfRoadSign>
+        <rdfs:label>ОбъездПрепятствияСправа</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DetourOfTheObstacleOnTheLeft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DetourOfTheObstacleOnTheLeft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.2.2</hasCodeOfRoadSign>
+        <rdfs:label>ОбъездПрепятствияСлева</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfAction1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfAction1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.3.1</hasCodeOfRoadSign>
+        <rdfs:label>НаправлениеДействия1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfAction2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfAction2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.3.2</hasCodeOfRoadSign>
+        <rdfs:label>НаправлениеДействия2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfMainRoad1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfMainRoad1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.13.1</hasCodeOfRoadSign>
+        <rdfs:label>НаправлениеГлавнойДороги1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfMovementForTrucks1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfMovementForTrucks1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.15.1</hasCodeOfRoadSign>
+        <rdfs:label>НаправлениеДвиженияДляГрузовыхАвтомобилей1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfMovementForTrucks2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfMovementForTrucks2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.15.2</hasCodeOfRoadSign>
+        <rdfs:label>НаправлениеДвиженияДляГрузовыхАвтомобилей2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfMovementOfVehiclesWithDangerousGoods2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfMovementOfVehiclesWithDangerousGoods2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.8.2</hasCodeOfRoadSign>
+        <rdfs:label>НаправлениеДвиженияТранспортныхСредствСОпаснымиГрузами2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfMovementOfVehiclesWithDangerousGoods3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfMovementOfVehiclesWithDangerousGoods3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.8.3</hasCodeOfRoadSign>
+        <rdfs:label>НаправлениеДвиженияТранспортныхСредствСОпаснымиГрузами3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfTheMainRoad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionOfTheMainRoad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.13</hasCodeOfRoadSign>
+        <rdfs:label>НаправлениеГлавнойДороги</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionsOfMovementByLanes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DirectionsOfMovementByLanes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.15.1</hasCodeOfRoadSign>
+        <rdfs:label>НаправленияДвиженияПоПолосам</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DisabledPeople -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DisabledPeople">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.17</hasCodeOfRoadSign>
+        <rdfs:label>Инвалиды</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DistanceToTheObject1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DistanceToTheObject1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.1.1</hasCodeOfRoadSign>
+        <rdfs:label>РасстояниеДоОбъекта1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DistanceToTheObject3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DistanceToTheObject3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.1.3</hasCodeOfRoadSign>
+        <rdfs:label>РасстояниеДоОбъекта3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DistanceToTheObject4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DistanceToTheObject4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.1.4</hasCodeOfRoadSign>
+        <rdfs:label>РасстояниеДоОбъекта4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DrivingStraight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DrivingStraight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.1.1</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеПрямо</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DrivingStraightOrToTheLeft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DrivingStraightOrToTheLeft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.1.5</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеПрямоИлиНалево</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DrivingStraightOrToTheRight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DrivingStraightOrToTheRight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.1.4</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеПрямоИлиНаправо</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DurationOfAction4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#DurationOfAction4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.5.4</hasCodeOfRoadSign>
+        <rdfs:label>ВремяДействия4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfAllRestrictions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfAllRestrictions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.31</hasCodeOfRoadSign>
+        <rdfs:label>КонецВсехОграничений</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfLane5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfLane5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.15.5</hasCodeOfRoadSign>
+        <rdfs:label>КонецПолосы5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfMainRoad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfMainRoad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.2</hasCodeOfRoadSign>
+        <rdfs:label>КонецГлавнойДороги</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfMaximumSpeedLimit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfMaximumSpeedLimit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.25</hasCodeOfRoadSign>
+        <rdfs:label>КонецОграниченияМаксимальнойСкорости</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfOneWayRoad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfOneWayRoad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.6</hasCodeOfRoadSign>
+        <rdfs:label>КонецДорогиСОдностороннимДвижением</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfProhibitedOvertaking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfProhibitedOvertaking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.21</hasCodeOfRoadSign>
+        <rdfs:label>КонецЗапрещенногоОбгона</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfTheResidentialArea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfTheResidentialArea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.22</hasCodeOfRoadSign>
+        <rdfs:label>КонецЖилойЗоны</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfTheRoadForCars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfTheRoadForCars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.4</hasCodeOfRoadSign>
+        <rdfs:label>КонецДорогиДляАвтомобилей</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfTheRoadWithALaneForFixedRouteVehicles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EndOfTheRoadWithALaneForFixedRouteVehicles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.12</hasCodeOfRoadSign>
+        <rdfs:label>КонецДорогиСПолосойДляМаршрутныхТранспортныхСредств</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EntryIsProhibited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#EntryIsProhibited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.1</hasCodeOfRoadSign>
+        <rdfs:label>ВъездЗапрещен</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ExceptForTheDisabled -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ExceptForTheDisabled">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.18</hasCodeOfRoadSign>
+        <rdfs:label>КромеИнвалидов</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ExitToAOneWayRoad1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ExitToAOneWayRoad1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.7.1</hasCodeOfRoadSign>
+        <rdfs:label>ВыездНаДорогуСОдностороннимДвижением1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ExitToAOneWayRoad2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ExitToAOneWayRoad2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.7.2</hasCodeOfRoadSign>
+        <rdfs:label>ВыездНаДорогуСОдностороннимДвижением2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#FoodPoint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#FoodPoint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.7</hasCodeOfRoadSign>
+        <rdfs:label>ПунктПитания</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#GasStation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#GasStation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.3</hasCodeOfRoadSign>
+        <rdfs:label>АвтозаправочнаяСтанция</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#GiveWay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#GiveWay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.4</hasCodeOfRoadSign>
+        <rdfs:label>УступитеДорогу</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#GravelRelease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#GravelRelease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.18</hasCodeOfRoadSign>
+        <rdfs:label>ВыбросГравия</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Green -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Green">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#HeightRestriction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#HeightRestriction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.13</hasCodeOfRoadSign>
+        <rdfs:label>ОграничениеВысоты</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Hospital -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Hospital">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.2</hasCodeOfRoadSign>
+        <rdfs:label>Больница</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#IntersectionOfEquivalentRoads -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#IntersectionOfEquivalentRoads">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.6</hasCodeOfRoadSign>
+        <rdfs:label>ПересечениеРавнозначныхДорог</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#IntersectionWithASecondaryRoad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#IntersectionWithASecondaryRoad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.3</hasCodeOfRoadSign>
+        <rdfs:label>ПересечениеСоВторостепеннойДорогой</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#IntersectionWithTheTramLine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#IntersectionWithTheTramLine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.5</hasCodeOfRoadSign>
+        <rdfs:label>ПересечениеСТрамвайнойЛинией</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#LaneDirection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#LaneDirection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.15.7</hasCodeOfRoadSign>
+        <rdfs:label>НаправлениеДвиженияПоПолосам</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#LaneDirections -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#LaneDirections">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.15.2</hasCodeOfRoadSign>
+        <rdfs:label>НаправленияДвиженияПоПолосе</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#LaneForFixedRouteVehicles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#LaneForFixedRouteVehicles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.14</hasCodeOfRoadSign>
+        <rdfs:label>ПолосаДляМаршрутныхТранспортныхСредств</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#LimitationOfTheMassPerVehicleAxle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#LimitationOfTheMassPerVehicleAxle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.12</hasCodeOfRoadSign>
+        <rdfs:label>ОграничениеМассыПриходящейсяНаОсьТранспортногоСредства</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#LimitingTheMinimumDistance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#LimitingTheMinimumDistance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.16</hasCodeOfRoadSign>
+        <rdfs:label>ОграничениеМинимальнойДистанции</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#LowFlyingAircraft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#LowFlyingAircraft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.30</hasCodeOfRoadSign>
+        <rdfs:label>НизколетящиеСамолеты</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MainRoad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MainRoad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.1</hasCodeOfRoadSign>
+        <rdfs:label>ГлавнаяДорога</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MassLimitation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MassLimitation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.11</hasCodeOfRoadSign>
+        <rdfs:label>ОграничениеМассы</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MaximumSpeedLimit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MaximumSpeedLimit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.24</hasCodeOfRoadSign>
+        <rdfs:label>ОграничениеМаксимальнойСкорости</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MethodOfParkingTheVehicle2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MethodOfParkingTheVehicle2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.6.2</hasCodeOfRoadSign>
+        <rdfs:label>СпособПостановкиТранспортногоСредстваНаСтоянку2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MethodOfParkingTheVehicle4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MethodOfParkingTheVehicle4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.6.4</hasCodeOfRoadSign>
+        <rdfs:label>СпособПостановкиТранспортногоСредстваНаСтоянку4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MoveDirectlyInAssociation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MoveDirectlyInAssociation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.1</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеПрямоВОбъединении</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovementOfTrucksIsProhibited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovementOfTrucksIsProhibited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.4</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеГрузовыхАвтомобилейЗапрещено</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovementOfTrucksIsProhibited1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovementOfTrucksIsProhibited1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.4.1</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеГрузовыхАвтомобилейЗапрещено1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovementOfVehiclesWithDangerousGoodsIsProhibited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovementOfVehiclesWithDangerousGoodsIsProhibited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.32</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеТранспортныхСредствСОпаснымиГрузамиЗапрещено</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovementToRightOrToLeft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovementToRightOrToLeft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.1.6</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеНаправоИлиНалево</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovementToTheLeft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovementToTheLeft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.1.3</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеНалево</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovementWithoutStoppingIsProhibited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovementWithoutStoppingIsProhibited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.5</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеБезОстановкиЗапрещено</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovingToTheRight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MovingToTheRight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.1.2</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеНаправо</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#NarrowingOfRoad3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#NarrowingOfRoad3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.20.3</hasCodeOfRoadSign>
+        <rdfs:label>СужениеДороги3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#NarrowingOfTheRoad2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#NarrowingOfTheRoad2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.20.2</hasCodeOfRoadSign>
+        <rdfs:label>СужениеДороги2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#OneWayRoad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#OneWayRoad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.5</hasCodeOfRoadSign>
+        <rdfs:label>ДорогаСОдностороннимДвижением</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#OtherHazards -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#OtherHazards">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.33</hasCodeOfRoadSign>
+        <rdfs:label>ПрочиеОпасности</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#OvertakingIsProhibited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#OvertakingIsProhibited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.20</hasCodeOfRoadSign>
+        <rdfs:label>ОбгонЗапрещен</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PaidServices -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PaidServices">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.8</hasCodeOfRoadSign>
+        <rdfs:label>ПлатныеУслуги</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Parking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Parking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.4</hasCodeOfRoadSign>
+        <rdfs:label>Парковка</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ParkingIsProhibited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ParkingIsProhibited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.28</hasCodeOfRoadSign>
+        <rdfs:label>СтоянкаЗапрещена</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ParkingIsProhibitedOnEvenDaysOfTheMonth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ParkingIsProhibitedOnEvenDaysOfTheMonth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.30</hasCodeOfRoadSign>
+        <rdfs:label>СтоянкаЗапрещенаПоЧетнымЧисламМесяца</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ParkingIsProhibitedOnOddDaysOfTheMonth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ParkingIsProhibitedOnOddDaysOfTheMonth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.29</hasCodeOfRoadSign>
+        <rdfs:label>СтоянкаЗапрещенаПоНечетнымЧисламМесяца</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ParkingPlaceForPassengerTaxis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ParkingPlaceForPassengerTaxis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.18</hasCodeOfRoadSign>
+        <rdfs:label>МестоСтоянкиЛегковыхТакси</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PedestrianCrossing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PedestrianCrossing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.22</hasCodeOfRoadSign>
+        <rdfs:label>ПешеходныйПереход</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PedestrianCrossing1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PedestrianCrossing1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.19.1</hasCodeOfRoadSign>
+        <rdfs:label>ПешеходныйПереход1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PedestrianCrossingAhead -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PedestrianCrossingAhead">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.20</hasCodeOfRoadSign>
+        <rdfs:label>ВпередиПешеходныйПереход</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PedestrianTrafficIsProhibited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PedestrianTrafficIsProhibited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.10</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеПешеходовЗапрещено</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PlaceForUTurn1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PlaceForUTurn1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.3.1</hasCodeOfRoadSign>
+        <rdfs:label>МестоДляРазворота1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PlaceOfRest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PlaceOfRest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.11</hasCodeOfRoadSign>
+        <rdfs:label>МестоОтдыха</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PlaceWhereBusAndTrolleybusStops -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PlaceWhereBusAndTrolleybusStops">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.16</hasCodeOfRoadSign>
+        <rdfs:label>МестоОстановкиАвтобусаИТроллейбуса</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PointOfMedicalCare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PointOfMedicalCare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.1</hasCodeOfRoadSign>
+        <rdfs:label>ПунктМедицинскойПомощи</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Polygon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Polygon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PostOfTheRoadPatrolService -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PostOfTheRoadPatrolService">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.12</hasCodeOfRoadSign>
+        <rdfs:label>ПостДорожноПатрульнойСлужбы</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RailwayCrossingWithABarrier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RailwayCrossingWithABarrier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1</hasCodeOfRoadSign>
+        <rdfs:label>ЖелезнодорожныйПереездСоШлагбаумом</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RailwayCrossingWithoutABarrier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RailwayCrossingWithoutABarrier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</hasCodeOfRoadSign>
+        <rdfs:label>ЖелезнодорожныйПереездБезШлагбаума</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ReceptionAreaOfRadioStationTransmittingTrafficInformation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ReceptionAreaOfRadioStationTransmittingTrafficInformation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.15</hasCodeOfRoadSign>
+        <rdfs:label>ЗонаПриемаРадиостанцииСИформациейОДорожномДвижении</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RecommendedSpeed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RecommendedSpeed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.2</hasCodeOfRoadSign>
+        <rdfs:label>РекомендуемаяСкорость</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Rectangle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Rectangle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Red -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ResidentialArea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ResidentialArea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.21</hasCodeOfRoadSign>
+        <rdfs:label>ЖилаяЗона</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ReverseMovement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ReverseMovement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.8</hasCodeOfRoadSign>
+        <rdfs:label>РеверсивноеДвижение</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadForCars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadForCars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.3</hasCodeOfRoadSign>
+        <rdfs:label>ДорогаДляАвтомобилей</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadWithALaneForFixedRouteVehicles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadWithALaneForFixedRouteVehicles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.11</hasCodeOfRoadSign>
+        <rdfs:label>ДорогаСПолосойДляМаршрутныхТранспортныхСредств</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadWorks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadWorks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.25</hasCodeOfRoadSign>
+        <rdfs:label>ДорожныеРаботы</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoughRoad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoughRoad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.16</hasCodeOfRoadSign>
+        <rdfs:label>НеровнаяДорога</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoundaboutIntersection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoundaboutIntersection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.7</hasCodeOfRoadSign>
+        <rdfs:label>ПересечениеСКруговымДвижением</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SecondaryRoadJunction2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SecondaryRoadJunction2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.3.2</hasCodeOfRoadSign>
+        <rdfs:label>ПримыканиеВторостепеннойДороги2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SecondaryRoadJunction3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SecondaryRoadJunction3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.3.3</hasCodeOfRoadSign>
+        <rdfs:label>ПримыканиеВторостепеннойДороги3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SecondaryRoadJunction4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SecondaryRoadJunction4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.3.4</hasCodeOfRoadSign>
+        <rdfs:label>ПримыканиеВторостепеннойДороги4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SecondaryRoadJunction6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SecondaryRoadJunction6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.3.6</hasCodeOfRoadSign>
+        <rdfs:label>ПримыканиеВторостепеннойДороги6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SlipperyRoad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SlipperyRoad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.15</hasCodeOfRoadSign>
+        <rdfs:label>СкользкаяДорога</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Square -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Square">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#StartOfLane3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#StartOfLane3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.15.3</hasCodeOfRoadSign>
+        <rdfs:label>НачалоПолосы3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SteepClimb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SteepClimb">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.14</hasCodeOfRoadSign>
+        <rdfs:label>КрутойПодъем</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SteepDescent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SteepDescent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.13</hasCodeOfRoadSign>
+        <rdfs:label>КрутойСпуск</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#StopLine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#StopLine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.16</hasCodeOfRoadSign>
+        <rdfs:label>СтопЛиния</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#StoppingIsProhibited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#StoppingIsProhibited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.27</hasCodeOfRoadSign>
+        <rdfs:label>ОстановкаЗапрещена</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Telephone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Telephone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.6</hasCodeOfRoadSign>
+        <rdfs:label>Телефон</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TheAdvantageOfOncomingTraffic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TheAdvantageOfOncomingTraffic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.6</hasCodeOfRoadSign>
+        <rdfs:label>ПреимуществоВстречногоДвижения</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TheMovementOfTractorsIsProhibited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TheMovementOfTractorsIsProhibited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.6</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеТракторовЗапрещено</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Toilet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Toilet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.18</hasCodeOfRoadSign>
+        <rdfs:label>Туалет</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TrafficIsProhibited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TrafficIsProhibited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.2</hasCodeOfRoadSign>
+        <rdfs:label>ДвижениеЗапрещено</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TrafficLightRegulation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TrafficLightRegulation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.8</hasCodeOfRoadSign>
+        <rdfs:label>СветофорноеРегулирование</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TramStopLocation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TramStopLocation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5.17</hasCodeOfRoadSign>
+        <rdfs:label>МестоОстановкиТрамвая</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TransportControlPoint -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TransportControlPoint">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ServiceSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7.14</hasCodeOfRoadSign>
+        <rdfs:label>ПунктТранспортногоКонтроля</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Triangle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Triangle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Tunnel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Tunnel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.31</hasCodeOfRoadSign>
+        <rdfs:label>Тоннель</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TurningToTheLeftIsProhibited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TurningToTheLeftIsProhibited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.18.2</hasCodeOfRoadSign>
+        <rdfs:label>ПоворотНалевоЗапрещен</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TurningToTheRightIsProhibited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TurningToTheRightIsProhibited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.18</hasCodeOfRoadSign>
+        <rdfs:label>ПоворотНаправоЗапрещен</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TwoWayTraffic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TwoWayTraffic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.21</hasCodeOfRoadSign>
+        <rdfs:label>ДвустороннееДвижение</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TypesOfVehicle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TypesOfVehicle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.4.3</hasCodeOfRoadSign>
+        <rdfs:label>ВидыТранспортногоСредства</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TypesOfVehicle1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TypesOfVehicle1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.4.1</hasCodeOfRoadSign>
+        <rdfs:label>ВидыТранспортногоСредства1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TypesOfVehicle4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#TypesOfVehicle4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.4.4</hasCodeOfRoadSign>
+        <rdfs:label>ВидыТранспортногоСредства4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#UTurnIsProhibited -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#UTurnIsProhibited">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.19</hasCodeOfRoadSign>
+        <rdfs:label>РазворотЗапрещен</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#UndergroundPedestrianCrossing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#UndergroundPedestrianCrossing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.6</hasCodeOfRoadSign>
+        <rdfs:label>ПодземныйПешеходныйПереход</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#White -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#White">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WidthLimitation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WidthLimitation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.14</hasCodeOfRoadSign>
+        <rdfs:label>ОграничениеШирины</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WildAnimals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WildAnimals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.27</hasCodeOfRoadSign>
+        <rdfs:label>ДикиеЖивотные</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WorkingDays -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WorkingDays">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8.5.2</hasCodeOfRoadSign>
+        <rdfs:label>РабочиеДни</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Yellow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Yellow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#arrow1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#arrow1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Arrow"/>
+        <hasImageColor rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Black"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#arrow2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#arrow2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Arrow"/>
+        <hasImageColor rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#White"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#circle2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#circle2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Figure"/>
+        <hasImageColor rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#White"/>
+        <hasShape rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Circle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#distance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#distance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Distance"/>
+        <hasTextColor rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Black"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#distance2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#distance2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Distance"/>
+        <hasTextColor rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#White"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#exampleDirectionIndicatior2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#exampleDirectionIndicatior2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign"/>
+        <hasBackgroundColor rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Blue"/>
+        <hasFrameColor rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#White"/>
+        <hasImage rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#arrow2"/>
+        <hasShape rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Rectangle"/>
+        <hasText rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#distance2"/>
+        <hasText rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#inscription2_2"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.9.1*</hasCodeOfRoadSign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#exampleDirectionIndicator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#exampleDirectionIndicator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign"/>
+        <hasBackgroundColor rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#White"/>
+        <hasFrameColor rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Black"/>
+        <hasImage rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#arrow1"/>
+        <hasImage rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#rectangle1"/>
+        <hasShape rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Rectangle"/>
+        <hasText rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#distance1"/>
+        <hasText rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#inscription1"/>
+        <hasText rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#inscription2"/>
+        <hasCodeOfRoadSign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6.9.1*</hasCodeOfRoadSign>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#inscription1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#inscription1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Inscription"/>
+        <hasTextColor rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Black"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#inscription2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#inscription2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Inscription"/>
+        <hasTextColor rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#White"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#inscription2_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#inscription2_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Inscription"/>
+        <hasTextColor rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#White"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#rectangle1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#rectangle1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Figure"/>
+        <hasImageColor rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Blue"/>
+        <hasShape rdf:resource="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Rectangle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#AdditionalInformationSign"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#InformationSign"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrescriptiveSign"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#PrioritySign"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#SignOfSpecialRegulations"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WarningSign"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Animal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Arrow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Human"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Line"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Transport"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#WeatherCondition"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Color"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Image"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RoadSign"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Shape"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Text"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Distance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Inscription"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Letter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#RadioSignal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Speed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Time"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#Weight"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
