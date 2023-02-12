@@ -1,4 +1,9 @@
-@prefix : <http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#> .
+@prefix : <http://tutorialacademy.com/2015/jena#> .
+[ruleTrafficLightRoad: (?c :isRunningOn ?r) (?trl :isOn ?r) (?trl :relatedTrafficLight ?l) (?l :type :RedStop) -> (?c :giveWay ?r)]
+[ruleTrafficLightInt: (?c :isRunningOn ?r) (?trl :isOn ?int) (?int :type :Intersection) (?trl :relatedTrafficLight ?l) (?l :type :RedStop) -> (?c :giveWay ?r)]
+[ruleCrosswalk: (?c :isRunningOn ?r) (?cw :isOn ?r) (?cw :type ?cws) (?cw :type :Class) -> (?c :giveWay ?r)]
+[ruleMaximumSpeedLimit: (?c :isRunningOn ?r) (?max :isOn ?r) (?max :type :ProhibitionSign) -> (:SpeedLimit40 :isOn ?r)]
+
 [ruleSpeedLimitWarning: (?c :isRunningOn ?r) (?c :type :MyCar)
     (?r :type :OneWayLane) (?ss :isOn ?r)
     (?ss :type :ProhibitionSign) -> (?c :type :OverSpeedWarning)]
@@ -22,10 +27,3 @@
 [ruleCrosswalkPedStop: (?c :isRunningOn ?r) (?c :type :MyCar)
     (?r :type :OneWayLane) (?cw :isOn ?r) (?cw :type :CrosswalkRoadSegment)
     (?p :isRunningOn ?cw) (?p :type :Pedestrian) -> (?c :type :Stop)]
-
-[6_13_RedStopBeforeTrafficLight: (?car :type :MyCar) (?road :type :OneWayLane) (?tr :type :TrafficSignal)
-        (?car :isRunningOn ?road) (?tr :isOn ?road) (?tr :relatedTrafficLight ?redLight) (?redLight :type :RedStop)
-        -> (?car :type :Stop)]
-
-[6_13_check: (?car :type :MyCar) (?road :type :OneWayLane) (?car :isRunningOn ?road)
-                (?car :velocity ?speed) (?speed <http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#kmh> "30") -> (?car :type :RedStop)]

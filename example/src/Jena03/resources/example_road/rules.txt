@@ -1,5 +1,16 @@
-@prefix : <http://tutorialacademy.com/2015/jena#> .
-[ruleTrafficLightRoad: (?c :isRunningOn ?r) (?trl :isOn ?r) (?trl :relatedTrafficLight ?l) (?l :type :RedStop) -> (?c :giveWay ?r)]
-[ruleTrafficLightInt: (?c :isRunningOn ?r) (?trl :isOn ?int) (?int :type :Intersection) (?trl :relatedTrafficLight ?l) (?l :type :RedStop) -> (?c :giveWay ?r)]
-[ruleCrosswalk: (?c :isRunningOn ?r) (?cw :isOn ?r) (?cw :type ?cws) (?cw :type :Class) -> (?c :giveWay ?r)]
-[ruleMaximumSpeedLimit: (?c :isRunningOn ?r) (?max :isOn ?r) (?max :type :ProhibitionSign) -> (:SpeedLimit40 :isOn ?r)]
+@prefix : <http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#> .
+[6_13_RedStopBeforeTrafficLight: (?car :type :MyCar) (?road :type :OneWayLane) (?tr :type :TrafficSignal)
+        (?car :isRunningOn ?road) (?tr :isOn ?road) (?tr :relatedTrafficLight ?redLight) (?redLight :type :RedStop)
+        -> (?car :type :Stop)]
+
+[10_2_OverSpeedWarning: (?car :type :MyCar) (?road :type :OneWayLane) (?car :isRunningOn ?road)
+                (?car :velocity ?speed) (?speed <http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#kmh> "55")
+                -> (?car :type :OverSpeedWarning)]
+
+[10_2_OverSpeedSmoothDeceleration: (?car :type :MyCar) (?road :type :OneWayLane) (?car :isRunningOn ?road)
+                (?car :velocity ?speed) (?speed <http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#kmh> "70")
+                -> (?car :type :SmoothDeceleration)]
+
+[14_1_CrosswalkPedestrian: (?car :type :MyCar) (?road :type :OneWayLane) (?car :isRunningOn ?road)
+                (?cw :type :CrosswalkRoadSegment) (?cw :isOn ?road) (?pedestrian :type :Pedestrian)
+                (?pedestrian :isRunningOn ?cw) -> (?car :type :Stop)]

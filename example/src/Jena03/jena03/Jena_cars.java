@@ -1,23 +1,23 @@
 package Jena03.jena03;
 
+import org.apache.jena.datatypes.RDFDatatype;
+import org.apache.jena.graph.NodeFactory;
+import org.apache.logging.log4j.core.config.Node;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.apache.jena.util.FileManager;                                                                                //для вывода онтологии из файла
 import org.apache.jena.util.iterator.ExtendedIterator;                                                                  //для итератора, чтобы обойти все классы
 import java.io.*;                                                                                                       //для ввода/вывода
-import java.util.ArrayList;
-
-import org.apache.jena.rdf.model.*;                                                                                     //всегда подключаем для создания онтологической модели
-import org.apache.jena.ontology.*;                                                                                      //всегда подключаем для создания онтологической модели
+import org.apache.jena.rdf.model.*;                                                                                     //для создания онтологической модели
+import org.apache.jena.ontology.*;                                                                                      //для создания онтологической модели
 import org.apache.jena.shared.JenaException;                                                                            //для обработки внештатных ситуаций
 
 public class Jena_cars {                                                                                                //метод run произошёл от Object
     static Logger log = LoggerFactory.getLogger(Jena_cars.class);                                                       //для обработки внештатных ситуаций
-    static String ontoFile = "src/Jena03/resources/TTICarOnto.owl.xml";                                                 //4 японских онтологии
+    static String ontoFileCar = "src/Jena03/resources/TTICarOnto.owl.xml";                                                 //4 японских онтологии
     static String ontoFileControl = "src/Jena03/resources/TTIControlOnto.owl.xml";
     static String ontoFileMap = "src/Jena03/resources/TTIMapOnto.owl.xml";
-    static String ontoFileTempaku = "src/Jena03/resources/TTITempakuMapData.owl.xml";
-    static String ontoSign = "src/Jena03/resources/roadSign4.owl.xml";                                                  //онтология по знакам
+    static String ontoFileSign = "src/Jena03/resources/roadSign4.owl.xml";                                                  //онтология по знакам
     public static void main(String[] args) {
         new Jena_cars().run();
     }
@@ -28,14 +28,12 @@ public class Jena_cars {                                                        
                 OntModelSpec s = new OntModelSpec(OntModelSpec.OWL_MEM);                                                //объект связанный со спецификациями онтологической модели
                 s.setDocumentManager(mgr);                                                                              //"подцепим" онтомодел и менеджер спецификациями
                 OntModel ontoModel = ModelFactory.createOntologyModel(s);                                               //онтологическая модель
-                InputStream inCar = FileManager.get().open(ontoFile);                                                   //считываем японские онтологии
+                InputStream inCar = FileManager.get().open(ontoFileCar);                                                   //считываем японские онтологии
                 InputStream inControl = FileManager.get().open(ontoFileControl);
                 InputStream inMap = FileManager.get().open(ontoFileMap);
-                InputStream inTempaku = FileManager.get().open(ontoFileTempaku);
                 ontoModel.read(inCar, null);                                                                       //добавляем онтологии к модели
                 ontoModel.read(inControl, null);
                 ontoModel.read(inMap, null);
-                ontoModel.read(inTempaku, null);
                 ExtendedIterator<OntClass> classes = ontoModel.listClasses();                                           //итератор для прохода по классам (дальше аналогично)
                 StringBuilder data = new StringBuilder();                                                               //для записи в файл
                 while (classes.hasNext()) {
@@ -49,12 +47,11 @@ public class Jena_cars {                                                        
                             while (insts.hasNext()) {
                                 OntResource theInst = insts.next();
                                 insts.remove();                                                                         //№1 Способ удаления всех экземпляров
-                                //data.append("\n  ").append(theInst.getLocalName());
                             }
-                            /*while (insts.hasNext()) {                                                                 //для проверки удаления - testFile2.txt
-                                OntResource theInst = (OntResource) insts.next();
+                            while (insts.hasNext()) {                                                                 //для проверки удаления - InstOfClasses.txt
+                                OntResource theInst = insts.next();
                                 data.append("\n  ").append(theInst.getLocalName());
-                            }*/
+                            }
                             data.append("  \n]\n");
                         }
                     }
@@ -75,8 +72,7 @@ public class Jena_cars {                                                        
                 /*ontoModel.getResource("#myLane").                                                                     //добавляет триплет, но выдаёт ошибку при записи в rdf ниже
                 addProperty(ontoModel.getProperty("#nextPathSegment"), ontoModel.getResource("#otherLane"));*/
 
-                StringBuilder dataSet = new StringBuilder();                                                            //для записи триплетов
-                dataSet.append("@prefix : <http://tutorialacademy.com/2015/jena#> .\n");                                //Обязательно нужен prefix в начале
+
                 StmtIterator it = ontoModel.listStatements();
                 while (it.hasNext()) {                                                                                  //Удаление всех триплетов японской онтологии
                     Statement stmt = it.nextStatement();
@@ -93,14 +89,12 @@ public class Jena_cars {                                                        
                             && !predicate.getLocalName().equals("versionIRI")) {
                         it.remove();
                     }
-                    /*if (object.isLiteral()) {                                                                         //<Название на английском> label <Название на русском>
-                        System.out.println( subject.getLocalName() + " "
-                                + predicate.getLocalName() + " "
-                                + object.asLiteral() );
-                    }*/
                 }
-                InputStream inSign = FileManager.get().open(ontoSign);                                                  //Добавление онтологии знаков
+                InputStream inSign = FileManager.get().open(ontoFileSign);                                                  //Добавление онтологии знаков
                 ontoModel.read(inSign, null);
+                //Datatype на скорость
+                ontoModel.createDatatypeProperty("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#velocity")
+                        .addRange(ontoModel.getResource("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#kmh"));
                 /*if (theClass.getLocalName().equals("OneWayLane")) {
                             theClass.createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#otherLane");
                             theClass.createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#myLane");
@@ -110,94 +104,85 @@ public class Jena_cars {                                                        
                                     ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#otherLane"));
                         }*/
                 ontoModel.getOntClass("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#OneWayLane")
-                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Polytechnic"); //Улица политехническая
+                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Polytechnic");                       //Улица политехническая
                 ontoModel.getOntClass("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Car#MyCar")
-                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Ego");   //Наша машина
+                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Ego");                               //Наша машина
+                ontoModel.getOntClass("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#TrafficSignal")
+                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicTrafficLight");           //Светофор у магнита
+                ontoModel.getOntClass("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Control#GreenGo")
+                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Green");                             //Зеленый сигнал светофора
+                ontoModel.getOntClass("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Control#RedStop")
+                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Red");                           //Красный сигнал светофора
+                ontoModel.getOntClass("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#CrosswalkRoadSegment")
+                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicCrosswalk");
+                ontoModel.createClass("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Pedestrian")
+                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Ped");
+                ontoModel.createClass("http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#ProhibitionSign")
+                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#MaxSpeedLimit");
                 ontoModel.add(
                         ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Ego"),
                         ontoModel.getProperty("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Car#isRunningOn"),
-                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Polytechnic")); //Едем по политехнической
-                ontoModel.getOntClass("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#TrafficSignal")
-                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicTrafficLight1"); //Светофор у магнита
-                ontoModel.getOntClass("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#TrafficSignal")
-                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicTrafficLight2"); //Светофор на перекрестке
-                ontoModel.getOntClass("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Control#GreenGo")
-                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Green"); //Зеленый сигнал светофора
-                ontoModel.getOntClass("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Control#RedStop")
-                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Red");   //Красный сигнал светофора
-                ontoModel.getOntClass("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#Intersection")
-                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicIntersection");
-                ontoModel.getOntClass("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#CrosswalkRoadSegment")
-                        .createIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicCrosswalk");
+                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Polytechnic"));                      //Едем по политехнической
                 ontoModel.add(
-                        ontoModel.getResource("http://www.semanticweb.org/алина/ontologies/2022/10/roadSign4#MaximumSpeedLimit"),
+                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#MaxSpeedLimit"),
                         ontoModel.getProperty("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#isOn"),
                         ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Polytechnic"));
-                /*ontoModel.add(
-                        ontoModel.getResource("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#SpeedLimit40"),
-                        ontoModel.getProperty("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#isOn"),
-                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Polytechnic"));*/
-                ontoModel.add(
-                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Polytechnic"),
-                        ontoModel.getProperty("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#hasIntersection"),
-                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicIntersection"));
-                ontoModel.add(                                                                                          //светофор на перекрестке
-                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicTrafficLight2"),
-                        ontoModel.getProperty("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#isOn"),
-                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicIntersection"));
-                ontoModel.add(                                                                                          //светофор на дороге (у магнита)
-                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicTrafficLight1"),
+                ontoModel.add(                                                                                                                      //светофор на дороге (у магнита)
+                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicTrafficLight"),
                         ontoModel.getProperty("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#isOn"),
                         ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Polytechnic"));
                 ontoModel.add(
-                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicTrafficLight1"),
+                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicTrafficLight"),
                         ontoModel.getProperty("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#relatedTrafficLight"),
                         ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Green"));
                 ontoModel.add(
-                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicTrafficLight2"),
-                        ontoModel.getProperty("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#relatedTrafficLight"),
-                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Red"));
+                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicCrosswalk"),
+                        ontoModel.getProperty("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#isOn"),
+                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Polytechnic"));
+                ontoModel.add(
+                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Ped"),
+                        ontoModel.getProperty("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Car#isRunningOn"),
+                        ontoModel.getResource("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#PolytechnicCrosswalk"));
+
+                RDFDatatype dataType = NodeFactory.getType("http://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Map#kmh");
+                //return ResourceFactory.createTypedLiteral(value, dataType);
+
+                ontoModel.getIndividual("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#Ego")
+                        .addProperty(ontoModel.getProperty("http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#velocity"), "30",
+                                dataType);
+
+                StringBuilder dataSet = new StringBuilder();                                                                                    //для записи триплетов
+                dataSet.append("@prefix : <http://www.semanticweb.org/igor/ontologies/2022/10/map-ontology#> .\n");                                                        //Обязательно нужен prefix в начале
                 it = ontoModel.listStatements();
-                while (it.hasNext()) {                                                                                  //вывод для проверки + вывод в dataset.n3
-                    Statement stmt = it.nextStatement();                                                                //Всё это в файл dataset.n3
+                while (it.hasNext()) {                                                                                                                   //вывод для проверки + вывод в dataset.n3
+                    Statement stmt = it.nextStatement();                                                                                                //Всё это в файл dataset.n3
                     Resource subject = stmt.getSubject();
                     Property predicate = stmt.getPredicate();
                     RDFNode object = stmt.getObject();
-                    if (/*!predicate.getLocalName().equals("type")
-                            &&*/ !predicate.getLocalName().equals("subPropertyOf")
-                            && !predicate.getLocalName().equals("range")
-                            && !predicate.getLocalName().equals("domain")
-                            && !predicate.getLocalName().equals("subClassOf")
-                            && !predicate.getLocalName().equals("hasTextColor")
-                            && !predicate.getLocalName().equals("hasImageColor")
-                            && !predicate.getLocalName().equals("hasShape")
-                            && !predicate.getLocalName().equals("hasText")
-                            && !predicate.getLocalName().equals("hasBackgroundColor")
-                            && !predicate.getLocalName().equals("hasFrameColor")
-                            && !predicate.getLocalName().equals("hasImage")
-                            && object.isResource()
-                            && !predicate.getLocalName().equals("versionIRI")
-                            && subject.getLocalName() != null
-                            && object.asResource().getLocalName() != null
-                            && ((subject.getLocalName().equals("Ego"))
-                            || (subject.getLocalName().equals("Polytechnic"))
-                            || (subject.getLocalName().equals("PolytechnicTrafficLight1"))
-                            || (subject.getLocalName().equals("PolytechnicTrafficLight2"))
-                            || (subject.getLocalName().equals("Green"))
-                            || (subject.getLocalName().equals("Red"))
-                            || (subject.getLocalName().equals("PolytechnicIntersection"))
-                            || (subject.getLocalName().equals("MaximumSpeedLimit"))
-                            || (subject.getLocalName().equals("PolytechnicCrosswalk"))
-                            || (subject.getLocalName().equals("RedStop"))
-                            || (subject.getLocalName().equals("CrosswalkRoadSegment"))
-                            || (subject.getLocalName().equals("SpeedLimit40")))
+                    if (subject.getLocalName() != null && ((subject.getLocalName().equals("Ego")) || (subject.getLocalName().equals("Polytechnic"))
+                            || (subject.getLocalName().equals("PolytechnicTrafficLight")) || (subject.getLocalName().equals("Green"))
+                            || (subject.getLocalName().equals("Red")) || (subject.getLocalName().equals("MaxSpeedLimit"))
+                            || (subject.getLocalName().equals("PolytechnicCrosswalk")) || (subject.getLocalName().equals("RedStop"))
+                            || (subject.getLocalName().equals("GreenGo")) || (subject.getLocalName().equals("CrosswalkRoadSegment"))
+                            || (subject.getLocalName().equals("Pedestrian")) || (subject.getLocalName().equals("Ped"))
+                            || (subject.getLocalName().equals("velocity")) || (subject.getLocalName().equals("kmh")))
                       ) {
-                        System.out.println( subject.getLocalName() + " "                                                //вывод для наглядности
-                                + predicate.getLocalName() + " "
-                                + object.asResource().getLocalName() );
-                        dataSet.append(":").append(subject.getLocalName()).
-                                append(" :").append(predicate.getLocalName()).
-                                append(" :").append(object.asResource().getLocalName()).append(" .\n");
+                        try {
+                            System.out.println( subject.getLocalName() + " "                                                                            //вывод для наглядности
+                                    + predicate.getLocalName() + " "
+                                    + object.asResource().getLocalName() );
+                            dataSet.append(":").append(subject.getLocalName()).
+                                    append(" :").append(predicate.getLocalName()).
+                                    append(" :").append(object.asResource().getLocalName()).append(" .\n");
+                        } catch (ResourceRequiredException rre) {
+                            System.out.println( subject.getLocalName() + " "                                                                            //вывод для наглядности
+                                    + predicate.getLocalName() + " "
+                                    + object);
+                            dataSet.append(":").append(subject.getLocalName()).
+                                    append(" :").append(predicate.getLocalName()).
+                                    append(" :").append(object).append(" .\n");
+                        }
+
                     }
                 }
                 FileOutputStream outF = new FileOutputStream("src/Jena03/resources/ResultTrafficOnto.owl");       //Собранная онтология
@@ -213,7 +198,10 @@ public class Jena_cars {                                                        
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            log.info("Ontology" + ontoFile + "loaded.");
+            log.info("Ontology " + ontoFileCar + " loaded.");
+            log.info("Ontology " + ontoFileControl + " loaded.");
+            log.info("Ontology " + ontoFileMap + " loaded.");
+            log.info("Ontology " + ontoFileSign + " loaded.");
         } catch (JenaException je) {
             System.err.println("ERROR" + je.getMessage());
             je.printStackTrace();
